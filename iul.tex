@@ -1,25 +1,37 @@
 \documentclass[a4paper,11pt]{article}
 \linespread{1.2}
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
 \usepackage[german]{babel}
 \usepackage[margin=1.5cm, top=1cm]{geometry} % Etwas mehr Rand für die Lesbarkeit
+
 \usepackage{xcolor}
 \usepackage{tikz}
-\usepackage{charter} 
 \usepackage{microtype}
 \usepackage{multicol}
-\usepackage{wrapfig} % Für den Textumfluss
+\usepackage{wrapfig}
 \usepackage{parskip}
-\pagestyle{empty}
-\usepackage{mathptmx} % Times New Roman Ersatz
-\usepackage[scaled]{helvet} % Helvetica (Arial-ähnlich)
-\renewcommand{\familydefault}{\rmdefault}
+
+% --- DIE NEUE SCHRIFT-ORDNUNG ---
+\usepackage{tgpagella}      % Palatino-Klon: Modern, offen, elegant
+\usepackage[T1]{fontenc}    % Korrekte Trennung und Sonderzeichen
+\usepackage[scaled=0.92]{helvet} % Passende Sans-Serif für Akzente
+
+% WICHTIG: mathptmx (Times) hier NICHT laden, sonst überschreibt es Pagella!
+
 \usepackage{titlesec}
-\titleformat{\section}{\normalfont\large\bfseries\centering\scshape}{\textls[50]}{0pt}{}
-\titleformat{\subsection}{\normalfont\normalsize\bfseries\centering\itshape}{}{0pt}{}
-\titlespacing*{\section}{0pt}{12pt}{8pt}
-\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+% Haupttitel: Kapitälchen & Sperrung
+\titleformat{\section}
+  {\normalfont\large\bfseries\centering\scshape}
+  {}{0pt}{\textls[60]}
+
+% Untertitel: Kursiv
+\titleformat{\subsection}
+  {\normalfont\normalsize\itshape\centering}
+  {}{0pt}{}
+
+\titlespacing*{\section}{0pt}{18pt}{10pt}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+
 \definecolor{darkgrey}{HTML}{1a1a1a}
 \definecolor{mediumgrey}{HTML}{444444}
 
