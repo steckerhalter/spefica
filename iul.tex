@@ -1,34 +1,35 @@
 \documentclass[a4paper,11pt]{article}
-\linespread{1.2}
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 \usepackage[margin=1.5cm, top=1cm]{geometry} % Etwas mehr Rand für die Lesbarkeit
 
 \usepackage{xcolor}
 \usepackage{tikz}
-\usepackage{microtype}
 \usepackage{multicol}
 \usepackage{wrapfig}
 \usepackage{parskip}
 
-% --- DIE NEUE SCHRIFT-ORDNUNG ---
-\usepackage{tgpagella}      % Palatino-Klon: Modern, offen, elegant
-\usepackage[T1]{fontenc}    % Korrekte Trennung und Sonderzeichen
-\usepackage[scaled=0.92]{helvet} % Passende Sans-Serif für Akzente
+% --- SCHRIFT-UPDATE: BASKERVALD (Scharf & Klar) ---
+\usepackage[T1]{fontenc}
+\usepackage{baskervald} % Scharfe, moderne Serifenschrift
+\usepackage[scaled=0.90]{helvet} % Für den modernen Kontrast in den Titeln
 
-% WICHTIG: mathptmx (Times) hier NICHT laden, sonst überschreibt es Pagella!
-
+\usepackage{microtype}
 \usepackage{titlesec}
-% Haupttitel: Kapitälchen & Sperrung
+
+% Haupttitel: Sans-Serif (Helvetica), Kapitälchen, weit gesperrt
+% Das nimmt das "Altmodische" komplett raus
 \titleformat{\section}
-  {\normalfont\large\bfseries\centering\scshape}
-  {}{0pt}{\textls[60]}
+  {\fontfamily{phv}\selectfont\large\bfseries\centering\scshape}
+  {}{0pt}{\textls[100]}
 
-% Untertitel: Kursiv
+% Untertitel: Sans-Serif, etwas dezenter
 \titleformat{\subsection}
-  {\normalfont\normalsize\itshape\centering}
+  {\fontfamily{phv}\selectfont\normalsize\centering}
   {}{0pt}{}
-
+% Etwas mehr Zeilenabstand für die Luftigkeit
+  \linespread{1.25}
+  
 \titlespacing*{\section}{0pt}{18pt}{10pt}
 \titlespacing*{\subsection}{0pt}{12pt}{6pt}
 
