@@ -1,7 +1,8 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
-\usepackage[margin=1.5cm, top=1cm]{geometry} % Etwas mehr Rand für die Lesbarkeit
+\usepackage[margin=0.5cm]{geometry} % Etwas mehr Rand für die Lesbarkeit
+\pagestyle{empty}
 
 \usepackage{xcolor}
 \usepackage{tikz}
@@ -17,19 +18,19 @@
 \usepackage{microtype}
 \usepackage{titlesec}
 
-% --- TITEL-DESIGN: NUR HAUPTTITEL FETT ---
 \titleformat{\section}
-  {\normalfont\Large\bfseries\centering\scshape} % Fett, Kapitälchen, Groß
-  {}{0pt}{\textls[80]}
+  {\normalfont\large\bfseries\centering}
+  {}{0pt}{\lsstyle\uppercase} % \lsstyle aktiviert die Sperrung, \uppercase macht es groß
 
 \titleformat{\subsection}
-  {\normalfont\large\centering\itshape} % Kursiv, aber NICHT fett
+  {\normalfont\normalsize\centering\itshape}
   {}{0pt}{}
 
+% Abstände
 \titlespacing*{\section}{0pt}{22pt}{12pt}
-\titlespacing*{\subsection}{0pt}{14pt}{8pt}
+\titlespacing*{\subsection}{0pt}{12pt}{4pt}
 
-\linespread{1.25}
+\linespread{1.2}
 
 \definecolor{darkgrey}{HTML}{1a1a1a}
 \definecolor{mediumgrey}{HTML}{444444}
@@ -43,7 +44,7 @@
 \end{minipage}%
 \begin{minipage}[c]{0.25\linewidth}
   \centering
-  \raisebox{-2.9ex}{%
+  \raisebox{-3.2ex}{%
     \begin{minipage}{\linewidth}
       \centering
       \fontfamily{phv}\selectfont
@@ -66,7 +67,8 @@
 
 \begin{multicols}{2}
 
-\section*{Jenseits des Nutzens: Die Wiederentdeckung der Integrität}
+  \section*{Jenseits des Nutzens\\
+    \small Die Wiederentdeckung der Integrität}
 \subsection*{Die glänzende Fassade}
 Wir leben in einer Welt, die das Äussere perfektioniert hat. In den Medien sehen wir Menschen mit makellosen Körpern, die Karriere machen. Leute die immer Lachen, mit scheinbarer innerer Stabilität. Doch oft ist diese Stabilität eine Illusion. Das Äussere ist sauber und geordnet, aber das Innere nicht: da herrscht Unruhe und Unordnung.
 \subsection*{Der Tauschhandel der Kindheit}
@@ -82,7 +84,7 @@ Obwohl die Psychoanalyse das Gewissen oft nur als soziale Programmierung sieht, 
 Die Verhärtung: Jede verleugnete Wahrheit betäubt das Gewissen bis dass es mit der Zeit völlig verhärtet.
 Orientierungslosigkeit: Einmal zum Schweigen gebracht, kann das Gewissen nicht mehr als inneren Kompass für die Wahrheit dienen. Der Mensch verliert die Fähigkeit, zwischen echt und unecht, zwischen richtig und falsch zu unterscheiden, wie Dostojewski treffend schrieb:
 „Wer sich selbst belügt und auf seine eigene Lüge hört, der kommt so weit, dass er keinerlei Wahrheit mehr weder in sich noch um sich her unterscheidet.“
-\subsection*{Das Nützlichkeitsprinzip: Survival of the Fittest als Lebensform}
+\subsection*{Das Nützlichkeitsprinzip}
 Wenn der innere Kern verloren ist, bleibt nur noch das Aussen. Der Mensch wird zum reinen Strategen seiner selbst.
 Nützlichkeit statt Wahrheit: Handlungen werden nicht mehr danach bewertet, ob sie richtig sind, sondern ob sie nützen.
 Gelebter Darwinismus: Hier wird die Evolutionstheorie zur traurigen Realität: Der Mensch ohne Seele lebt nur noch für den Moment des Vorteils. Er manipuliert, schauspielert und schmeichelt, um zu bekommen, was er will. Er ist „fit“ im Sinne der Anpassung, aber er hat sein Menschsein dabei aufgegeben.
