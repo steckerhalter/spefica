@@ -17,15 +17,13 @@
 \usepackage{microtype}
 \usepackage{titlesec}
 
-% --- TITEL-DESIGN: HARMONISCH & MODERN ---
-% Wir nutzen die Baskervald auch für die Titel, aber in "Small Caps"
-% Das wirkt edel, aber durch die Sperrung trotzdem modern.
+% --- TITEL-DESIGN: NUR HAUPTTITEL FETT ---
 \titleformat{\section}
-  {\normalfont\Large\centering\scshape} % Etwas größer, Kapitälchen
-  {}{0pt}{\textls[70]} % Dezente Sperrung für Eleganz
+  {\normalfont\Large\bfseries\centering\scshape} % Fett, Kapitälchen, Groß
+  {}{0pt}{\textls[80]}
 
 \titleformat{\subsection}
-  {\normalfont\large\centering\itshape} % Kursiv für den erzählenden Ton
+  {\normalfont\large\centering\itshape} % Kursiv, aber NICHT fett
   {}{0pt}{}
 
 \titlespacing*{\section}{0pt}{22pt}{12pt}
@@ -69,7 +67,7 @@
 \begin{multicols}{2}
 
 \section*{Jenseits des Nutzens: Die Wiederentdeckung der Integrität}
-\subsection*{Einleitung: Die glänzende Fassade}
+\subsection*{Die glänzende Fassade}
 Wir leben in einer Welt, die das Äussere perfektioniert hat. In den Medien sehen wir Menschen mit makellosen Körpern, die Karriere machen. Leute die immer Lachen, mit scheinbarer innerer Stabilität. Doch oft ist diese Stabilität eine Illusion. Das Äussere ist sauber und geordnet, aber das Innere nicht: da herrscht Unruhe und Unordnung.
 \subsection*{Der Tauschhandel der Kindheit}
 Der Psychoanalytiker Arno Gruen beschrieb in seinem Werk Der Verrat am Selbst, wie ein Kind in einer unaufrichtigen Umgebung vor eine unmögliche Wahl gestellt wird. Um die Liebe und Sicherheit der Eltern nicht zu verlieren, muss es seine angeborene Integrität opfern:
