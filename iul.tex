@@ -10,11 +10,16 @@
 \usepackage{microtype}
 \usepackage{multicol}
 \usepackage{wrapfig} % Für den Textumfluss
+\usepackage{parskip}
 \pagestyle{empty}
 \usepackage{mathptmx} % Times New Roman Ersatz
 \usepackage[scaled]{helvet} % Helvetica (Arial-ähnlich)
 \renewcommand{\familydefault}{\rmdefault}
-
+\usepackage{titlesec}
+% Zentriert alle \section* Überschriften
+\titleformat{\section}{\normalfont\Large\bfseries\centering}{}{0pt}{}
+% Zentriert alle \subsection* Überschriften
+\titleformat{\subsection}{\normalfont\large\bfseries\centering}{}{0pt}{}
 \definecolor{darkgrey}{HTML}{1a1a1a}
 \definecolor{mediumgrey}{HTML}{444444}
 
@@ -51,26 +56,34 @@
 \begin{multicols}{2}
 
 \section*{Jenseits des Nutzens: Die Wiederentdeckung der Integrität}
-
 \subsection*{Einleitung: Die glänzende Fassade}
 Wir leben in einer Welt, die das Äussere perfektioniert hat. In den Medien sehen wir Menschen mit makellosen Körpern, die Karriere machen. Leute die immer Lachen, mit scheinbarer innerer Stabilität. Doch oft ist diese Stabilität eine Illusion. Das Äussere ist sauber und geordnet, aber das Innere nicht: da herrscht Unruhe und Unordnung.
+\subsection*{Der Tauschhandel der Kindheit}
+Der Psychoanalytiker Arno Gruen beschrieb in seinem Werk Der Verrat am Selbst, wie ein Kind in einer unaufrichtigen Umgebung vor eine unmögliche Wahl gestellt wird. Um die Liebe und Sicherheit der Eltern nicht zu verlieren, muss es seine angeborene Integrität opfern:
+\begin{quote}
+  Die Fähigkeit, sich der Unmenschlichkeit anzupassen, gilt in unserer Gesellschaft als Zeichen von Stärke. In Wirklichkeit ist es der Verlust unseres Menschseins. – Arno Gruen
+\end{quote}
+Die Unterwerfung: Das Kind spürt die Unaufrichtigkeit der Erwachsenen, darf sie aber nicht benennen.
+Das falsche Selbst: Um zu überleben, beginnt es, die Erwartungen der Umwelt zu spiegeln. Es tauscht seine lebendige Seele gegen eine funktionierende Maske ein. Die Performance rückt in den Mittelpunkt, die Wahrheit wird unterdrückt.
+Die Folge: Das Kind „funktioniert“ zwar, aber es verliert den Kontakt zu seinem wahren Kern. Es entsteht eine innere Leere, die fortan durch äußeren Erfolg oder soziale Bestätigung überdeckt werden muss.
+\subsection*{Das sterbende Gewissen: Der Verlust des Kompasses}
+Obwohl die Psychoanalyse das Gewissen oft nur als soziale Programmierung sieht, zeigt die Realität eine tiefere Dimension. Wer anfängt zu heucheln, muss aktiv die Instanz in sich ausschalten, die „Stopp“ sagt.
+Die Verhärtung: Jede verleugnete Wahrheit betäubt das Gewissen bis dass es mit der Zeit völlig verhärtet.
+Orientierungslosigkeit: Einmal zum Schweigen gebracht, kann das Gewissen nicht mehr als inneren Kompass für die Wahrheit dienen. Der Mensch verliert die Fähigkeit, zwischen echt und unecht, zwischen richtig und falsch zu unterscheiden, wie Dostojewski treffend schrieb:
+„Wer sich selbst belügt und auf seine eigene Lüge hört, der kommt so weit, dass er keinerlei Wahrheit mehr weder in sich noch um sich her unterscheidet.“
+\subsection*{Das Nützlichkeitsprinzip: Survival of the Fittest als Lebensform}
+Wenn der innere Kern verloren ist, bleibt nur noch das Aussen. Der Mensch wird zum reinen Strategen seiner selbst.
+Nützlichkeit statt Wahrheit: Handlungen werden nicht mehr danach bewertet, ob sie richtig sind, sondern ob sie nützen.
+Gelebter Darwinismus: Hier wird die Evolutionstheorie zur traurigen Realität: Der Mensch ohne Seele lebt nur noch für den Moment des Vorteils. Er manipuliert, schauspielert und schmeichelt, um zu bekommen, was er will. Er ist „fit“ im Sinne der Anpassung, aber er hat sein Menschsein dabei aufgegeben.
+\subsection*{Die individuelle Entscheidung}
+Der entscheidende Punkt ist: Dieser Prozess ist kein unabänderliches Schicksal. Es ist eine – oft unbewusste – Entscheidung. Aber selbst wenn man sich dazu entschieden hatte, das Gewissen zu übergehen und in der Unwahrheit zu leben, kann man wieder zur Wahrheit zurückkehren. Es bedarf dazu einfach den Willen, wieder aufrichtig und authentisch zu sein und mit der Heuchelei aufzuhören. Der Lohn dafür ist die Rückgewinnung der Integrität, des inneren Kerns – damit man nicht länger im Außen suchen muss, was nur im Inneren zu finden ist.
+\subsection*{Fazit: Was aus dem Menschen herauskommt}
+Am Ende entscheidet nicht die soziale Maske über den Wert eines Lebens, sondern das, was aus dem Inneren hervortritt. Ein Mensch ohne Kern mag stark wirken, bleibt aber innerlich ohne Substanz. Wahre Stabilität kommt nur aus der Übereinstimmung von Innen und Aussen. Integrität ist kein Luxus, sondern die Voraussetzung dafür, dass wir nicht als „biologische Maschinen“ enden, sondern beseelte Wesen bleiben. Die innere Ordnung ist die Grundvoraussetzung für die äussere Ordnung. Sie ist nicht willkürlich, sondern orientiert sich an einer Wahrheit, die grösser ist als wir selbst. Wenn wir die Vernunft und das Gewissen als Wegweiser ernst nehmen, entdecken wir, dass Integrität kein menschliches Konstrukt ist, sondern die Verbindung zum Ursprung des Lebens.
 
-\subsection*{1. Der Tauschhandel der Kindheit}
-Der Psychoanalytiker Arno Gruen beschrieb in seinem Werk \textit{Der Verrat am Selbst}, wie ein Kind in einer unaufrichtigen Umgebung vor eine unmögliche Wahl gestellt wird. Um die Liebe und Sicherheit der Eltern nicht zu verlieren, muss es seine angeborene Integrität opfern. Die Performance rückt in den Mittelpunkt, die Wahrheit wird unterdrückt.
+\vspace{4mm}
+\hrule
+\centering \texttt{dialog@spefica.ch}
 
-\subsection*{2. Das sterbende Gewissen}
-Wer anfängt zu heucheln, muss aktiv die Instanz in sich ausschalten, die „Stopp“ sagt. Jede verleugnete Wahrheit betäubt das Gewissen, bis dass es mit der Zeit völlig verhärtet. Der Mensch verliert die Fähigkeit, zwischen echt und unecht zu unterscheiden.
-
-\subsection*{3. Das Nützlichkeitsprinzip}
-Handlungen werden nicht mehr danach bewertet, ob sie richtig sind, sondern ob sie nützen. Der Mensch ohne Seele lebt nur noch für den Moment des Vorteils. Er ist „fit“ im Sinne der Anpassung, aber er hat sein Menschsein dabei aufgegeben.
-
-\subsection*{4. Die individuelle Entscheidung}
-Dieser Prozess ist kein unabänderliches Schicksal. Es bedarf einfach den Willen, wieder aufrichtig zu sein und mit der Heuchelei aufzuhören. Der Lohn dafür ist die Rückgewinnung der Integrität.
-
-\subsection*{Fazit}
-Am Ende entscheidet nicht die soziale Maske über den Wert eines Lebens, sondern das, was aus dem Inneren hervortritt. Wahre Stabilität kommt nur aus der Übereinstimmung von Innen und Aussen. Integrität ist kein Luxus, sondern die Voraussetzung dafür, dass wir nicht als „biologische Maschinen“ enden, sondern beseelte Wesen bleiben. 
-
-Die innere Ordnung ist die Grundvoraussetzung für die äussere Ordnung. Sie ist nicht willkürlich, sondern orientiert sich an einer Wahrheit, die grösser ist als wir selbst. Wenn wir die Vernunft und das Gewissen als Wegweiser ernst nehmen, entdecken wir, dass Integrität kein menschliches Konstrukt ist, sondern die Verbindung zum Ursprung des Lebens.
 
 \end{multicols}
 
