@@ -16,10 +16,10 @@
 \usepackage[scaled]{helvet} % Helvetica (Arial-ähnlich)
 \renewcommand{\familydefault}{\rmdefault}
 \usepackage{titlesec}
-% Zentriert alle \section* Überschriften
-\titleformat{\section}{\normalfont\Large\bfseries\centering}{}{0pt}{}
-% Zentriert alle \subsection* Überschriften
-\titleformat{\subsection}{\normalfont\large\bfseries\centering}{}{0pt}{}
+\titleformat{\section}{\normalfont\large\bfseries\centering\scshape}{\textls[50]}{0pt}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries\centering\itshape}{}{0pt}{}
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
 \definecolor{darkgrey}{HTML}{1a1a1a}
 \definecolor{mediumgrey}{HTML}{444444}
 
