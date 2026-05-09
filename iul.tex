@@ -17,21 +17,21 @@
 \usepackage{microtype}
 \usepackage{titlesec}
 
-% Haupttitel: Sans-Serif (Helvetica), Kapitälchen, weit gesperrt
-% Das nimmt das "Altmodische" komplett raus
+% --- TITEL-DESIGN: HARMONISCH & MODERN ---
+% Wir nutzen die Baskervald auch für die Titel, aber in "Small Caps"
+% Das wirkt edel, aber durch die Sperrung trotzdem modern.
 \titleformat{\section}
-  {\fontfamily{phv}\selectfont\large\bfseries\centering\scshape}
-  {}{0pt}{\textls[100]}
+  {\normalfont\Large\centering\scshape} % Etwas größer, Kapitälchen
+  {}{0pt}{\textls[70]} % Dezente Sperrung für Eleganz
 
-% Untertitel: Sans-Serif, etwas dezenter
 \titleformat{\subsection}
-  {\fontfamily{phv}\selectfont\normalsize\centering}
+  {\normalfont\large\centering\itshape} % Kursiv für den erzählenden Ton
   {}{0pt}{}
-% Etwas mehr Zeilenabstand für die Luftigkeit
-  \linespread{1.25}
-  
-\titlespacing*{\section}{0pt}{18pt}{10pt}
-\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+
+\titlespacing*{\section}{0pt}{22pt}{12pt}
+\titlespacing*{\subsection}{0pt}{14pt}{8pt}
+
+\linespread{1.25}
 
 \definecolor{darkgrey}{HTML}{1a1a1a}
 \definecolor{mediumgrey}{HTML}{444444}
